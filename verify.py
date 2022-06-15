@@ -10,6 +10,7 @@ import utils
 from train import train
 import model as custom_model
 
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 def verify_all(dir, lr, batch_size, dataset, architecture, save_freq, order, threshold, half=0):
     if not os.path.exists(dir):
